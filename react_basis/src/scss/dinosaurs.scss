@@ -1,0 +1,26 @@
+#dinosaurWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dinosaur{
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  @media screen and (min-width: 600px) {
+    width: 240px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+}
+
+.selected{
+  border: 5px solid black;
+}

@@ -1,0 +1,87 @@
+html{
+    height: 100vh;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+#wrapper{
+    min-height: 600px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-top: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*align-items: center;*/
+    width: 100%;
+    background-color: red;
+}
+
+nav{
+    background-color: cornflowerblue;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 5px;
+
+}
+
+#navLeft, #navRight{
+    position: absolute;
+    height: 60px;
+}
+
+#navLeft {
+    left: 0;
+}
+
+#navRight {
+    right: 0;
+}
+
+.picProfile{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    flex-basis: 300px;
+}
+
+.picProfile > img{
+   width: 100%;
+}
+
+#navMenu{
+    background-color: white;
+    height: 100%;
+    width: 60px;
+}
+
+@media screen and (min-width: 600px) {
+    #navMenu {
+        display: none;
+    }
+
+    .picProfile {
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .picProfile {
+        color: red;
+    }
+}
+
+
+

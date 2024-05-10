@@ -1,0 +1,82 @@
+html{
+    background-color: hotpink;
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 55px;
+}
+
+nav {
+    height: 50px;
+    background-color: rebeccapurple;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav > div {
+    height: 100%;
+}
+
+nav img{
+    height: 100%;
+}
+
+#links{
+    box-sizing: border-box;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+section{
+    min-height: 500px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color: blue;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.box > h1{
+    text-align: center;
+}
+
+.box > img{
+    height: 225px;
+}
+
+@media screen and (min-width: 600px){
+    section{
+        flex-direction: row;
+    }
+
+    .box{
+        width: 200px;
+    }
+}

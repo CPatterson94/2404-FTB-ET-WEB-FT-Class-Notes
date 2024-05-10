@@ -1,0 +1,66 @@
+@use "variables";
+
+html{
+  background-color: variables.$mainColor;
+}
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 55px;
+  color: white;
+}
+
+section{
+  min-height: 500px;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.block{
+  width: 100%;
+  display: flex;
+}
+
+
+.showcase_block{
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: variables.$mobileSkew){
+    flex-direction: row;
+  }
+}
+
+.center_block{
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  background-color: blue;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  @media screen and (min-width: variables.$mobileSkew) {
+    width: 200px;
+  }
+
+}
+
+.box > h1{
+  text-align: center;
+}
+
+.box > img{
+  height: 225px;
+}
